@@ -1,0 +1,115 @@
+.contenedor{
+    padding: 5px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "contenido contenido2"
+                         "footer footer";
+}
+h1{
+    margin: 5px;
+    color: rgb(253, 118, 145);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.contenedor .header{
+    background-color: bisque;
+    grid-area: header;
+}
+.contenedor .nav{
+    grid-area: nav;
+    background-color: rgb(255, 145, 215);
+}
+.contenedor .contenido{
+    grid-area: contenido;
+}
+.contenedor .ads{
+    grid-area: ads;
+}
+.contenedor .footer{
+    grid-area: footer;
+}
+.navbar {
+    background-color: #d0a1ff; 
+}
+.navbar-nav .nav-link {
+    color: white; 
+}
+.navbar {
+    width: 100%;
+}
+.navbar-toggler {
+    border-color: rgb(145, 101, 255); 
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.accordion-header {
+    background-color: #FFAAAA; 
+    color: #000; 
+}
+.accordion-button {
+    background-color: #ea7eff; 
+    color: white; 
+    border: none; 
+}
+.accordion-button:not(.collapsed) {
+    background-color: #0056b3; 
+    color: white;
+}
+.accordion-collapse {
+    background-color: #bd66ff; 
+}
+.accordion-body {
+    background-color: #ffb4dd77;
+    color: #333;
+}
+.footer {
+    grid-area: footer;
+    background-color: #a5d8af; 
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; 
+    margin: 0; 
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-content h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+footer p {
+    font-size: 0.9em;
+    color: #666;
+}
+.contenido2{
+    font-size: 25px;
+    font-family: 'Gabriola';
+    padding: 10px;
+}
+@media(max-width: 618px){
+    .contenedor{
+        padding: 5px;
+        background-color: beige;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                             "nav"
+                             "contenido"
+                             "contenido2"
+                             "footer";
+    }
+}
